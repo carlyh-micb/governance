@@ -348,32 +348,25 @@ For ToIP Approved Deliverables:
 7. The updated deliverable shall be uploaded to the same Zenodo record series used for previous versions.
 8. The title shall be updated to include the new patch version (e.g. 1.0.1)
 
-## Minor Revisions
-
-Minor revisions introduce additional content while preserving the intent and scope of the approved deliverable.
-
-Examples include:
-
-- Additional examples
-- New implementation guidance
-- Additional use cases
-- Clarifications of existing requirements
-- New non-normative content
-
-Minor revisions:
+## Minor revisions:
 
 1. Require Working Group approval.
 2. Do not normally require public review.
 3. Require publication of a **Revision Impact Statement**.
-5. Require notification to the Steering Committee.
-6. Shall increment the minor version number.
-7. Shall reset the patch version number to zero.
+4. Require notification to the Steering Committee a minimum of two weeks before a Steering Committee meeting.
+5. Shall increment the minor version number.
+6. Shall reset the patch version number to zero.
 
 For ToIP Approved Deliverables:
 
-8. The updated deliverable shall be uploaded to a new Zenodo record series and granted a new DOI.
+7. The updated deliverable shall be uploaded to a new Zenodo record and assigned a new DOI.
 
-The Steering Committee may request that a proposed minor revision be reclassified as a major revision.
+Additional Steering Committee review requirements:
+
+- The Steering Committee may request that a proposed minor revision be reclassified as a major revision.
+- The Steering Committee may discuss the proposed revision at any Steering Committee meeting following notification by the Working Group.
+- If the Steering Committee does not object, request remediation, or request reclassification to a major revision within two weeks following the Steering Committee meeting at which the revision was presented, the revision shall be considered approved by the Steering Committee.
+- Once accepted, the Working Group may publish the minor revision and proceed with any associated DOI and Zenodo publication activities.
 
 ### Revision Impact Statement
 
@@ -409,6 +402,7 @@ For ToIP Approved Deliverables:
 6. The updated deliverable shall be uploaded to a new Zenodo record series and granted a new DOI.
 
 Major revisions shall follow the same review and approval process as a new deliverable beginning at the Working Draft stage.
+
 ---
 
 # Summary of Deliverable Progression
