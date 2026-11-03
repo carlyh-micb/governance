@@ -1,6 +1,30 @@
 # Stages of Development for Working Groups & Task Forces
 [Confluence Source](https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/22996901/Stages+of+Development+for+Working+Groups+Task+Forces)
 
+# Deliverable Classification
+
+Before beginning work, the Working Group shall classify the effort into one of the following categories.
+
+## Change Types
+
+| Change Type | Description | Version Increment |
+|-------------|-------------|------------------|
+| **New Deliverable** | Creation of a new deliverable | `1.0.0` |
+| **Major Revision** | Substantive changes to scope, requirements, architecture, normative content, or recommendations | `X.0.0` |
+| **Minor Revision** | Backwards-compatible additions, clarifications, new examples, or limited new content | `X.Y.0` |
+| **Patch Revision** | Editorial corrections, typo fixes, formatting improvements, broken links, or other non-substantive clarifications | `X.Y.Z` |
+
+## Approval Paths
+
+| Change Type | Working Group Approval | Public Review | Steering Committee Review |
+|-------------|-----------------------|---------------|---------------------------|
+| **New Deliverable** | Required | Required | Required for ToIP Approved status |
+| **Major Revision** | Required | Required | Full Steering Committee approval |
+| **Minor Revision** | Required | Not normally required | Notification and passive review |
+| **Patch Revision** | Required | Not required | Not required |
+
+This classification determines which approval pathway applies to the proposed work and the level of review required before publication.
+
 # List of Stages
 
 Although the specific needs of each Working Group (WG) and Task Force (TF) may vary, the following table describes the recommended stages in the development of a ToIP deliverable (e.g., a specification, guide, template, or white paper).
@@ -13,8 +37,8 @@ Although the specific needs of each Working Group (WG) and Task Force (TF) may v
 | 4 | **Design Principles** | Develop the principles that should guide/govern design of the solution | Consensus on design principles |
 | 5 | **Proposals** | Members submit proposed solution designs | No further proposals |
 | 6 | **Consolidation** | Members identify common elements and seek to develop a consolidated proposal | Consensus on contents of first Working Draft |
-| 7 | **Working Drafts** † | A cycle of publishing Working Drafts, raising and resolving issues, and agreeing on revisions | Consensus on first Implementers Draft or Public Review Draft |
-| 8 | **Implementers Drafts** | *Optional* — recommended for technical specifications where implementation feedback is desired prior to finalization | Consensus that sufficient implementation feedback has been received |
+| 7 | [**Working Drafts**](#stage-7-working-drafts) † | A cycle of publishing Working Drafts, raising and resolving issues, and agreeing on revisions | Consensus on first Implementers Draft or Public Review Draft |
+| 8 | [**Implementers Drafts**](stage-8-implementer-drafts-optional) | *Optional* — recommended for technical specifications where implementation feedback is desired prior to finalization | Consensus that sufficient implementation feedback has been received |
 | 9 | **Public Review Drafts** | Same as Working Draft stage except with public review | Consensus (or vote) on WG Approved Draft |
 | 10 | **WG Approved Draft** † | WG decision to submit for SC approval | Consensus (or vote) to submit for SC approval |
 | 11 | **ToIP Approved Draft** † | SC decision to approve as ToIP Deliverable | Consensus (or vote) to approve |
@@ -289,6 +313,92 @@ Successful completion of this stage results in the deliverable becoming a:
 
 This represents the highest level of approval within the ToIP deliverable process and signifies that the deliverable has been reviewed and approved by the ToIP Steering Committee.
 
+# Stage 12: Deliverable Maintenance
+
+Once a deliverable has been approved, it enters a maintenance phase during which revisions may be made.
+
+Maintenance revisions shall be classified as:
+
+- Major revisions
+- Minor revisions
+- Patch revisions
+
+## Patch Revisions
+
+Patch revisions are intended for non-substantive changes such as:
+
+- Typographical corrections
+- Formatting corrections
+- Broken link fixes
+- Editorial improvements
+- Clarifications that do not alter meaning
+
+Patch revisions:
+
+1. Must be approved by the Working Group.
+2. Do not require public review.
+3. Do not require Steering Committee approval.
+4. Shall increment the patch version number.
+5. Shall maintain the same major and minor version numbers.
+6. The Working Group shall maintain a change log documenting the patch changes.
+
+For ToIP Approved Deliverables:
+
+7. The updated deliverable shall be uploaded to the same Zenodo record series used for previous versions.
+
+## Minor Revisions
+
+Minor revisions introduce additional content while preserving the intent and scope of the approved deliverable.
+
+Examples include:
+
+- Additional examples
+- New implementation guidance
+- Additional use cases
+- Clarifications of existing requirements
+- New non-normative content
+
+Minor revisions:
+
+1. Require Working Group approval.
+2. Do not normally require public review.
+3. Require publication of a **Revision Impact Statement**.
+5. Require notification to the Steering Committee.
+6. Shall increment the minor version number.
+7. Shall reset the patch version number to zero.
+
+The Steering Committee may request that a proposed minor revision be reclassified as a major revision.
+
+### Revision Impact Statement
+
+A brief page or less which lists:
+- Summary of changes
+- Rationale
+- Impact assessment
+- Why the WG believes this is minor
+
+
+## Major Revisions
+
+Major revisions materially change the content, scope, requirements, recommendations, or architecture of an approved deliverable.
+
+Examples include:
+
+- Significant new requirements
+- Removal of previously approved content
+- Breaking changes
+- Major restructuring
+- Significant changes in recommendations or guidance
+
+Major revisions:
+
+1. Require Working Group approval. See [Stage 10: WG Approved Draft](#stage-10-wg-approved-draft)
+2. Require public review.
+3. Require Steering Committee approval.
+4. Shall increment the major version number.
+5. Shall reset the minor and patch version numbers to zero.
+
+Major revisions shall follow the same review and approval process as a new deliverable beginning at the Working Draft stage.
 ---
 
 # Summary of Deliverable Progression
