@@ -1,4 +1,4 @@
-# Stages of Development for Working Groups & Task Forces
+# Stages of Development for Working Groups & Task Forces - DRAFT
 [Confluence Source](https://lf-toip.atlassian.net/wiki/spaces/HOME/pages/22996901/Stages+of+Development+for+Working+Groups+Task+Forces)
 
 # Deliverable Classification
@@ -302,7 +302,7 @@ Submission to the Steering Committee is optional and should occur only if the Wo
 
 ## Steering Committee Approval
 
-If a majority of the Working Group supports moving the deliverable forward, the group should follow the established **ToIP Approved Deliverable Process** for submission to the Steering Committee.
+If a majority of the Working Group supports moving the deliverable forward, the group should follow the established [**ToIP Approved Deliverable Process**](toip_approved_deliverable.md) for submission to the Steering Committee.
 
 The Steering Committee will review the deliverable and determine whether it should be approved as a ToIP deliverable.
 
@@ -346,6 +346,7 @@ Patch revisions:
 For ToIP Approved Deliverables:
 
 7. The updated deliverable shall be uploaded to the same Zenodo record series used for previous versions.
+8. The title shall be updated to include the new patch version (e.g. 1.0.1)
 
 ## Minor Revisions
 
