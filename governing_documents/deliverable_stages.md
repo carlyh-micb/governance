@@ -38,10 +38,11 @@ Although the specific needs of each Working Group (WG) and Task Force (TF) may v
 | 5 | **Proposals** | Members submit proposed solution designs | No further proposals |
 | 6 | **Consolidation** | Members identify common elements and seek to develop a consolidated proposal | Consensus on contents of first Working Draft |
 | 7 | [**Working Drafts**](#stage-7-working-drafts) † | A cycle of publishing Working Drafts, raising and resolving issues, and agreeing on revisions | Consensus on first Implementers Draft or Public Review Draft |
-| 8 | [**Implementers Drafts**](stage-8-implementer-drafts-optional) | *Optional* — recommended for technical specifications where implementation feedback is desired prior to finalization | Consensus that sufficient implementation feedback has been received |
-| 9 | **Public Review Drafts** | Same as Working Draft stage except with public review | Consensus (or vote) on WG Approved Draft |
-| 10 | **WG Approved Draft** † | WG decision to submit for SC approval | Consensus (or vote) to submit for SC approval |
-| 11 | **ToIP Approved Draft** † | SC decision to approve as ToIP Deliverable | Consensus (or vote) to approve |
+| 8 | [**Implementers Drafts**](stage-8-implementers-drafts-optional) | *Optional* — recommended for technical specifications where implementation feedback is desired prior to finalization | Consensus that sufficient implementation feedback has been received |
+| 9 | [**Public Review Drafts**](#stage-9-public-review-drafts) | Same as Working Draft stage except with public review | Consensus (or vote) on WG Approved Draft |
+| 10 | [**WG Approved Draft**](#stage-10-wg-approved-draft) † | WG decision to submit for SC approval | Consensus (or vote) to submit for SC approval |
+| 11 | [**ToIP Approved Draft**](#stage-11-toip-approved-draft) † | SC decision to approve as ToIP Deliverable | Consensus (or vote) to approve |
+| 12 | [**Maintenance**](#stage-12-deliverable-maintenance) | Major, minor and patch updates to existing standards | Dependent on type of update |
 
 † Stages officially recognized in the Linux Foundation Joint Development Foundation process: **Pre-Draft**, **Draft**, **Working Group Approved**, and **ToIP Approved** deliverables.
 
@@ -367,6 +368,10 @@ Minor revisions:
 6. Shall increment the minor version number.
 7. Shall reset the patch version number to zero.
 
+For ToIP Approved Deliverables:
+
+8. The updated deliverable shall be uploaded to a new Zenodo record series and granted a new DOI.
+
 The Steering Committee may request that a proposed minor revision be reclassified as a major revision.
 
 ### Revision Impact Statement
@@ -392,11 +397,15 @@ Examples include:
 
 Major revisions:
 
-1. Require Working Group approval. See [Stage 10: WG Approved Draft](#stage-10-wg-approved-draft)
+1. Require Working Group approval.
 2. Require public review.
 3. Require Steering Committee approval.
 4. Shall increment the major version number.
 5. Shall reset the minor and patch version numbers to zero.
+
+For ToIP Approved Deliverables:
+
+6. The updated deliverable shall be uploaded to a new Zenodo record series and granted a new DOI.
 
 Major revisions shall follow the same review and approval process as a new deliverable beginning at the Working Draft stage.
 ---
