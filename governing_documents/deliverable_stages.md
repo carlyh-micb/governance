@@ -535,5 +535,51 @@ flowchart TD
     class B,C,E,F,G,H,J,N process;
     class D,I,K,L decision;
 ```
+## Working Group Approved to ToIP Approved
+```mermaid
+flowchart TD
+
+    A["MILESTONE<br/>JDF/ToIP Stage:<br/><b>Working Group Approved</b>"]
+
+    B["Announce & Distribute<br/>Working Group Approved Deliverable"]
+
+    C{"Decision:<br/>Submit to SC?"}
+
+    D(("Stop"))
+
+    E["Prepare SC Voting Package<br/>(ED + WG + TF)"]
+
+    F{"SC Consensus / Vote<br/>to Approve?"}
+
+    G["Evaluate Next Steps<br/>(Why did we end up here...)<br/>(ED + WG + TF)"]
+
+    H["MILESTONE<br/>JDF/ToIP Stage:<br/><b>ToIP Approved</b>"]
+
+    I["Publish & Disseminate<br/>ToIP Approved Deliverable"]
+
+    A --> B
+    B --> C
+
+    C -- Yes --> E
+    C -- No --> D
+
+    E --> F
+
+    F -- Yes --> H
+    F -- No --> G
+
+    H --> I
+
+    classDef milestone fill:#C7D95A,stroke:#666,color:#000;
+    classDef process fill:#9ED0E6,stroke:#666,color:#000;
+    classDef decision fill:#5A95E0,stroke:#666,color:#000;
+    classDef warning fill:#A62028,stroke:#666,color:#FFD84A;
+
+    class A,H milestone;
+    class B,E,I process;
+    class C,F decision;
+    class G warning;
+```
+
 
 
