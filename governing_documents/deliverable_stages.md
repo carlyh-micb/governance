@@ -471,25 +471,69 @@ The workflow includes preparation for review, optional implementer review, publi
 
 Diagram of the progression:
 ```mermaid
-flowchart LR
+flowchart TD
 
-    A["MILESTONE
-    JDF/ToIP stage:
-    Pre-Draft"]
+    A["MILESTONE<br/>JDF/ToIP Stage:<br/><b>Draft</b>"]
 
-    B["MILESTONE
-    JDF/ToIP stage:
-    Draft Deliverable"]
+    B["Working Draft<br/>Deliverable Editing"]
 
-    C["MILESTONE
-    JDF/ToIP stage:
-    Working Group Approved Deliverable"]
+    C["If the deliverable is a Specification,<br/>it MUST be in GitHub Spec-Up<br/>before Review Deliverable Editing"]
 
-    D["MILESTONE
-    JDF/ToIP stage:
-    ToIP Approved Deliverable"]
+    D{"Implementer<br/>Review Needed?"}
 
-    A --> B --> C --> D
+    E["Do Implementer Review"]
+
+    F["Build Review Package"]
+
+    G["Conduct Review"]
+
+    H["Disposition Feedback"]
+
+    I{"Ready for<br/>Public Review?"}
+
+    J["Do Public Review"]
+
+    K{"Ready for WG<br/>Approval?"}
+
+    L{"WG Consensus / Vote<br/>to Approve?"}
+
+    M["MILESTONE<br/>JDF/ToIP Stage:<br/><b>Working Group Approved</b>"]
+
+    N["Announce & Distribute<br/>Working Group Approved<br/>Deliverable"]
+
+    A --> B
+    B --> C
+    C --> D
+
+    D -- Yes --> E
+    D -- No --> I
+
+    E --> F
+    F --> G
+    G --> H
+    H --> B
+
+    I -- No --> B
+    I -- Yes --> J
+
+    J --> K
+    J --> F
+
+    K -- No --> B
+    K -- Yes --> L
+
+    L -- No --> B
+    L -- Yes --> M
+
+    M --> N
+
+    classDef milestone fill:#C7D95A,stroke:#888,color:#000;
+    classDef process fill:#9ED0E6,stroke:#666,color:#000;
+    classDef decision fill:#5A95E0,stroke:#666,color:#000;
+
+    class A,M milestone;
+    class B,C,E,F,G,H,J,N process;
+    class D,I,K,L decision;
 ```
 
 
