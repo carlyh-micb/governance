@@ -421,6 +421,29 @@ The complete progression of a ToIP deliverable can be summarized as:
 10. Working Group Approved Draft
 11. ToIP Approved Draft
 
+Diagram of the progression:
+```mermaid
+flowchart LR
+
+    A["MILESTONE
+    JDF/ToIP stage:
+    Pre-Draft"]
+
+    B["MILESTONE
+    JDF/ToIP stage:
+    Draft Deliverable"]
+
+    C["MILESTONE
+    JDF/ToIP stage:
+    Working Group Approved Deliverable"]
+
+    D["MILESTONE
+    JDF/ToIP stage:
+    ToIP Approved Deliverable"]
+
+    A --> B --> C --> D
+```
+
 ## Mapping to LF/JDF Deliverable Stages
 
 | ToIP Stage | LF/JDF Deliverable Status |
