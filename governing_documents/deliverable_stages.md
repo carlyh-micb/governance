@@ -421,6 +421,19 @@ The complete progression of a ToIP deliverable can be summarized as:
 10. Working Group Approved Draft
 11. ToIP Approved Draft
 
+
+## Mapping to LF/JDF Deliverable Stages
+
+| ToIP Stage | LF/JDF Deliverable Status |
+|------------|--------------------------|
+| Stages 1–6 | Pre-Draft |
+| Stage 7 (Working Drafts) | Draft Deliverable |
+| Stage 10 (WG Approved Draft) | Working Group Approved Deliverable |
+| Stage 11 (ToIP Approved Draft) | ToIP Approved Deliverable |
+
+The Implementers Draft and Public Review Draft stages are optional and intermediate stages used to improve the quality, interoperability, and community review of a deliverable prior to formal approval.
+
+
 Diagram of the progression:
 ```mermaid
 flowchart LR
@@ -444,13 +457,39 @@ flowchart LR
     A --> B --> C --> D
 ```
 
-## Mapping to LF/JDF Deliverable Stages
+## Draft to Working Group Approved
 
-| ToIP Stage | LF/JDF Deliverable Status |
-|------------|--------------------------|
-| Stages 1–6 | Pre-Draft |
-| Stage 7 (Working Drafts) | Draft Deliverable |
-| Stage 10 (WG Approved Draft) | Working Group Approved Deliverable |
-| Stage 11 (ToIP Approved Draft) | ToIP Approved Deliverable |
+This stage typically represents the longest period of work in the deliverable lifecycle, both technically and socially. The objective is to evolve a draft into a formal Working Group approved deliverable through iterative review, feedback, revision, and consensus-building.
 
-The Implementers Draft and Public Review Draft stages are optional and intermediate stages used to improve the quality, interoperability, and community review of a deliverable prior to formal approval.
+The effort required varies significantly by deliverable type:
+
+- **Informational deliverables** (for example, white papers, guidance documents, and reports) may proceed through review relatively quickly.
+- **Normative deliverables** (for example, technical specifications) often require extensive review, implementation experience, issue resolution, consensus building, and formal approval processes.
+
+The workflow includes preparation for review, optional implementer review, public review, disposition of review comments, repeated editing cycles, and eventual Working Group approval.
+
+
+Diagram of the progression:
+```mermaid
+flowchart LR
+
+    A["MILESTONE
+    JDF/ToIP stage:
+    Pre-Draft"]
+
+    B["MILESTONE
+    JDF/ToIP stage:
+    Draft Deliverable"]
+
+    C["MILESTONE
+    JDF/ToIP stage:
+    Working Group Approved Deliverable"]
+
+    D["MILESTONE
+    JDF/ToIP stage:
+    ToIP Approved Deliverable"]
+
+    A --> B --> C --> D
+```
+
+
